@@ -1,10 +1,10 @@
 import React from 'react';
-import './Display';
-import './ButtonPanel';
+import { Display } from './Display';
+import { ButtonPanel } from './ButtonPanel';
 
 
 const App = () => (
-  <div className ="App">
+  <div className="App">
     <Display />
     <ButtonPanel />
   </div>
