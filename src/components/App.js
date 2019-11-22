@@ -1,5 +1,5 @@
 import React from 'react';
-import './Display';
+import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 
 
