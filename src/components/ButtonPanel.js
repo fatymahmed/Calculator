@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button';
+import './ButtonPanel.css';
 
 const ButtonPanel = () => (
   <div className="ButtonPanel">
