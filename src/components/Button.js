@@ -13,3 +13,5 @@ const Button = (props) => {
 Button.propTypes = {
   name: PropTypes.string,
 };
+
+export default Button;
