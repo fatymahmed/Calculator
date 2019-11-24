@@ -5,7 +5,7 @@ import './ButtonPanel.css';
 const ButtonPanel = () => (
   <div className="buttonPanel">
     <div className="buttonGroup group1">
-      <Button name="AC" />
+      <Button name="AC" color="blue" />
       <Button name="+/-" />
       <Button name="%" />
       <Button name="/" />

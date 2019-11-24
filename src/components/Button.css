@@ -1,9 +1,10 @@
+.Button{
+    width: 100%;
+}
+
 button{
+    border: 1px solid lightgrey;
     height: 100px;
     width: 100%;
     color: black;
-}
-
-.Button{
-    width: 100%;
 }
