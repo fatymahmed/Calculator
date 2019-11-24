@@ -1,0 +1,13 @@
+.display{
+    display: flex;
+    background-color: gray;
+    height: 100px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+}
+
+h4{
+    width: 100%;
+    text-align: right;
+}
