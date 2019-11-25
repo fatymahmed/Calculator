@@ -1,4 +1,4 @@
-import operate from 'operate';
+import operate from './operate';
 
 const calculate = (calculateObject, buttonName) => {
   if (buttonName === '+/-') {
