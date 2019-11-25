@@ -19,6 +19,7 @@
       "import/no-unresolved": "off",
       "no-shadow": "off",
       "import/no-named-as-default": "off",
-      "no-param-reassign": "off"
+      "no-param-reassign": "off",
+      "import/extensions": "off"
     }
   }
