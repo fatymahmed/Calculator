@@ -18,6 +18,7 @@
       "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
       "import/no-unresolved": "off",
       "no-shadow": "off",
-      "import/no-named-as-default": "off"
+      "import/no-named-as-default": "off",
+      "no-param-reassign": "off"
     }
   }
