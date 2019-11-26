@@ -37,10 +37,6 @@ class App extends React.Component {
 
   handleClick(e) {
     const content = e.target.textContent;
-    const { total } = this.state;
-    const { next } = this.state;
-    const { operation } = this.state;
-
     if (content === 'AC') {
       this.clearAll();
     } else if (content === '=') {
@@ -58,14 +54,14 @@ class App extends React.Component {
       } else {
         this.setState((prevState) => ({ display: prevState.display + content }));
       }
-    } else if ({ operation } === null) {
-      if ({ total } === null) {
+    } else if (this.state.operation === null) {
+      if (this.state.total === null) {
         this.setState({ total: content });
       } else {
         this.setState((prevState) => ({ total: prevState.total + content }));
       }
       this.setState((prevState) => ({ display: prevState.total }));
-    } else if ({ next } === null) {
+    } else if (this.state.next === null) {
       this.setState({ next: content });
       this.setState((prevState) => ({ display: prevState.display + content }));
     } else {
@@ -75,10 +71,9 @@ class App extends React.Component {
   }
 
   render() {
-    const { display } = this.state;
     return (
       <div className="app">
-        <Display result={display || '0'} />
+        <Display result={this.state.display ? this.state.display : '0'} />
         <ButtonPanel onClick={this.handleClick} />
       </div>
     );

@@ -22,6 +22,7 @@
       "no-param-reassign": "off",
       "import/extensions": "off",
       "no-restricted-globals": "off",
-      "no-constant-condition": "off"
+      "no-constant-condition": "off",
+      "react/destructuring-assignment": "off"
     }
   }
