@@ -38,7 +38,6 @@ class App extends React.Component {
 
   handleClick(e) {
     const content = e.target.textContent;
-    console.log(Number(content));
     if (content === 'AC') {
       this.clearAll();
     } else if (content === '=') {
@@ -50,7 +49,12 @@ class App extends React.Component {
         operation: content,
         buttonName: content,
       });
-      this.setState((prevState) => ({ display: prevState.display + content }));
+      if (content === '+/-') {
+        this.setState((prevState) => (calculate(prevState, prevState.buttonName)));
+        this.setState((prevState) => ({ display: prevState.total }));
+      } else {
+        this.setState((prevState) => ({ display: prevState.display + content }));
+      }
     } else if (this.state.operation === null) {
       if (this.state.total === null) {
         this.setState({ total: content });
