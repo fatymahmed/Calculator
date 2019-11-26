@@ -20,6 +20,8 @@
       "no-shadow": "off",
       "import/no-named-as-default": "off",
       "no-param-reassign": "off",
-      "import/extensions": "off"
+      "import/extensions": "off",
+      "no-restricted-globals": "off",
+      "no-constant-condition": "off"
     }
   }
