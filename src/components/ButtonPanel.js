@@ -87,25 +87,25 @@ class ButtonPanel extends React.PureComponent {
             color="lightgrey"
           />
           <Button
-            onClick={(name) => this.props.onClick(name)}
+            onClick={name => this.props.onClick(name)}
             name="+"
           />
         </div>
         <div className="buttonGroup group5">
           <Button
-            onClick={(name) => this.props.onClick(name)}
+            onClick={name => this.props.onClick(name)}
             name="0"
             className="button-0"
             color="lightgrey"
             isWide
           />
           <Button
-            onClick={(name) => this.props.onClick(name)}
+            onClick={name => this.props.onClick(name)}
             name="."
             color="lightgrey"
           />
           <Button
-            onClick={(name) => this.props.onClick(name)}
+            onClick={name => this.props.onClick(name)}
             name="="
           />
         </div>

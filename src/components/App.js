@@ -40,8 +40,8 @@ class App extends React.Component {
     if (content === 'AC') {
       this.clearAll();
     } else if (content === '=') {
-      this.setState((prevState) => (calculate(prevState, prevState.buttonName)));
-      this.setState((prevState) => ({ display: prevState.total }));
+      this.setState(prevState => (calculate(prevState, prevState.buttonName)));
+      this.setState(prevState => ({ display: prevState.total }));
       this.clearAfterCalculation();
     } else if (isNaN(Number(content))) {
       this.setState({
@@ -49,24 +49,24 @@ class App extends React.Component {
         buttonName: content,
       });
       if (content === '+/-') {
-        this.setState((prevState) => (calculate(prevState, prevState.buttonName)));
-        this.setState((prevState) => ({ display: prevState.total }));
+        this.setState(prevState => (calculate(prevState, prevState.buttonName)));
+        this.setState(prevState => ({ display: prevState.total }));
       } else {
-        this.setState((prevState) => ({ display: prevState.display + content }));
+        this.setState(prevState => ({ display: prevState.display + content }));
       }
     } else if (this.state.operation === null) {
       if (this.state.total === null) {
         this.setState({ total: content });
       } else {
-        this.setState((prevState) => ({ total: prevState.total + content }));
+        this.setState(prevState => ({ total: prevState.total + content }));
       }
-      this.setState((prevState) => ({ display: prevState.total }));
+      this.setState(prevState => ({ display: prevState.total }));
     } else if (this.state.next === null) {
       this.setState({ next: content });
-      this.setState((prevState) => ({ display: prevState.display + content }));
+      this.setState(prevState => ({ display: prevState.display + content }));
     } else {
-      this.setState((prevState) => ({ next: prevState.next + content }));
-      this.setState((prevState) => ({ display: prevState.display + content }));
+      this.setState(prevState => ({ next: prevState.next + content }));
+      this.setState(prevState => ({ display: prevState.display + content }));
     }
   }
 
