@@ -6,7 +6,6 @@ const Button = (props) => {
   const { name } = props;
   const { color } = props;
   const { isWide } = props;
-  // const { id } = props;
   return (
     isWide
       ? (

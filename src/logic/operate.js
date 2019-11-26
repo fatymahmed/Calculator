@@ -5,7 +5,7 @@ const operate = (numberOne, numberTwo, operation) => {
     case '-':
       return Big(Number(numberOne)) - Big(Number(numberTwo));
     case '+':
-			return Number(Big(numberOne)) + Number(Big((numberTwo)));
+      return Number(Big(numberOne)) + Number(Big((numberTwo)));
     case '/':
       return Big(Number(numberOne)) / Big(Number(numberTwo));
     case '%':
