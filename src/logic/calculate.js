@@ -7,7 +7,6 @@ const calculate = (calculateObject, buttonName) => {
     calculateObject.total = operate(calculateObject.total,
       calculateObject.next, buttonName).toString();
   }
-  console.log(calculateObject.total);
   return calculateObject;
 };
 export default calculate;
