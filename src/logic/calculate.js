@@ -2,10 +2,10 @@ import operate from './operate';
 
 const calculate = (calculateObject, buttonName) => {
   if (buttonName === '+/-') {
-    calculateObject.total *= -1;
-    calculateObject.next *= -1;
+    calculateObject.total = (Number(calculateObject.total) * -1).toString();
   } else {
-    calculateObject.total = operate(calculateObject.total, calculateObject.next, buttonName);
+    calculateObject.total = operate(calculateObject.total,
+      calculateObject.next, buttonName).toString();
   }
   return calculateObject;
 };
