@@ -1,5 +1,5 @@
 ## Calculator app
-- The project was about a calculator that was built in react.
+- The project is a calculator app that was built in react.
 
 [Live link](https://friendly-kilby-083c54.netlify.com/)
 ![screenshot](./calculator.png)
