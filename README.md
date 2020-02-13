@@ -1,5 +1,5 @@
 ## Calculator app
-- A calculator app that was built in react.
+- A calculator app that was built in React.
 
 [Live link](https://friendly-kilby-083c54.netlify.com/)
 ![screenshot](./calculator.png)
